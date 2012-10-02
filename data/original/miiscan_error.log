@@ -1,0 +1,9 @@
+[Tue Oct 02 10:14:15 2012] [error] [client 157.56.93.153] File does not exist: /var/www/miiscan.com/html/robots.txt
+[Tue Oct 02 10:15:59 2012] [error] [client 157.56.93.153] File does not exist: /var/www/miiscan.com/html/svc
+[Tue Oct 02 10:53:55 2012] [error] [client 38.104.209.14] File does not exist: /var/www/miiscan.com/html/invite
+[Tue Oct 02 10:53:55 2012] [error] [client 38.104.209.14] File does not exist: /var/www/miiscan.com/html/favicon.ico
+[Tue Oct 02 10:56:24 2012] [error] [client 74.125.186.37] File does not exist: /var/www/miiscan.com/html/favicon.ico
+[Tue Oct 02 13:14:16 2012] [error] [client 220.181.108.159] File does not exist: /var/www/miiscan.com/html/static
+[Tue Oct 02 14:22:52 2012] [error] [client 180.76.5.165] File does not exist: /var/www/miiscan.com/html/robots.txt
+[Tue Oct 02 14:22:52 2012] [error] [client 180.76.6.212] File does not exist: /var/www/miiscan.com/html/robots.txt
+[Tue Oct 02 15:25:52 2012] [error] [client 74.125.183.25] File does not exist: /var/www/miiscan.com/html/favicon.ico
