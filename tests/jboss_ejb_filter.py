@@ -443,6 +443,7 @@ Caused by: java.io.FileNotFoundException: /usr/local/java/jboss-6.1.0.Final/serv
             java.rmi.NoSuchObjectException: Could not activate; failed to restore state"""
         self.first_line_stacktrace = """2012-10-02 00:01:32,119 DEBUG [org.jboss.ejb.plugins.AbstractInstanceCache] (WorkerThread#5[192.168.20.71:10806])  Activation failure: javax.ejb.EJBException: Could not activate; failed to restore state"""
         self.other_stacktrace_line = """        at org.jboss.ejb.plugins.StatefulSessionFilePersistenceManager.activateSession(StatefulSessionFilePersistenceManager.java:343) [:6.1.0.Final]"""
+        self.other_stacktrace_line_2 = """Caused by: java.io.FileNotFoundException: /usr/local/java/jboss-6.1.0.Final/server/prod.ejb/tmp/sessions/LoginUserSF-h7rxw4f1-p6/h7s6ck39-ph.ser (No such file or directory)"""
         self.line_after_stacktrace = """
 """
         self.line_contains_debug_and_fail = """2012-10-02 00:01:32,119 DEBUG [org.jboss.ejb.plugins.AbstractInstanceCache] (WorkerThread#5[192.168.20.71:10806])  Activation failure: javax.ejb.EJBException: Could not activate; failed to restore state"""
@@ -457,6 +458,7 @@ Caused by: java.io.FileNotFoundException: /usr/local/java/jboss-6.1.0.Final/serv
         self.line_contains_error = None
         self.first_line_stacktrace = None
         self.other_stacktrace_line = None
+        self.other_stacktrace_line_2 = None
         self.line_after_stacktrace = None
         self.line_contains_debug_and_fail = None
 
@@ -508,6 +510,34 @@ Caused by: java.io.FileNotFoundException: /usr/local/java/jboss-6.1.0.Final/serv
         ejb_filter = JbossEjbFilter(log_filename, filtered_log_filename, self.filtering_words)
         self.assertTrue(ejb_filter.write_filtered_log(test_line))
 
+    def test_is_stacktrace_empty_returns_false(self):
+        test_line = self.line_after_stacktrace
+        log_filename = "test.log"
+        filtered_log_filename = "filtered_test.log"
+        ejb_filter = JbossEjbFilter(log_filename, filtered_log_filename, self.filtering_words)
+        self.assertFalse(ejb_filter.is_stacktrace(test_line))
+
+    def test_is_stacktrace_line_starts_with_tab_at_returns_true(self):
+        test_line = self.other_stacktrace_line
+        log_filename = "test.log"
+        filtered_log_filename = "filtered_test.log"
+        fake_line_starts_with = ["        at", "Caused by: "]
+        ejb_filter = JbossEjbFilter(log_filename, filtered_log_filename, self.filtering_words)
+        self.assertTrue(ejb_filter.is_stacktrace(test_line, fake_line_starts_with))
+
+    def test_is_stacktrace_line_starts_with_caused_by_returns_true(self):
+        test_line = self.other_stacktrace_line_2
+        log_filename = "test.log"
+        filtered_log_filename = "filtered_test.log"
+        ejb_filter = JbossEjbFilter(log_filename, filtered_log_filename, self.filtering_words)
+        self.assertTrue(ejb_filter.is_stacktrace(test_line))
+
+    def test_is_stacktrace_non_stacktrace_line_returns_false(self):
+        test_line = self.line_contains_error
+        log_filename = "test.log"
+        filtered_log_filename = "filtered_test.log"
+        ejb_filter = JbossEjbFilter(log_filename, filtered_log_filename, self.filtering_words)
+        self.assertFalse(ejb_filter.is_stacktrace(test_line))
 
 if __name__ == '__main__':
     unittest.main()

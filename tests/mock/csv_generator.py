@@ -1,2 +1,0 @@
-class MockCsvGenerator():
-    pass
