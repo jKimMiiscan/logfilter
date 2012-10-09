@@ -1,0 +1,127 @@
+2012-10-08 00:10:00,077 ERROR [EJBVelocity] (Thread-16927) ::nobody::2684: ResourceManager : unable to find resource '/email/email_cust_deposit_release_en.vm' in any resource loader.
+2012-10-08 00:10:00,077 ERROR [com.riavera.app.service.template.WTemplate] (Thread-16927) ::nobody::2684: cannot locate template '/email/email_cust_deposit_release_en.vm' - velocity exception: Unable to find resource '/email/email_cust_deposit_release_en.vm'
+2012-10-08 00:10:00,078 ERROR [com.riavera.ejb.session.EventDispatcherBean] (Thread-16927) ::nobody::2684: exception handling queued event 26F1A4BDC0A8144733D0D500AAB0B7CB - will retry again later: com.riavera.exceptions.WNotFoundException: TEMPLATE_NOT_FOUND (9501): Cannot locate template
+	at com.riavera.app.service.template.WTemplate.processTemplateToFile(WTemplate.java:358) [:]
+	at sun.reflect.GeneratedMethodAccessor4552.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:157) [:6.0.0.GA]
+	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:96) [:6.0.0.GA]
+	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88) [:6.0.0.GA]
+012-10-08 02:27:31,628 ERROR [org.jboss.ejb.plugins.LogInterceptor] (WorkerThread#0[192.168.20.71:28599])  TransactionRolledbackException in method: public abstract javax.ejb.EJBObject javax.ejb.Handle.getEJBObject() throws java.rmi.RemoteException, causedBy:: java.rmi.NoSuchObjectException: Could not activate; failed to restore state
+	at org.jboss.ejb.plugins.AbstractInstanceCache.get(AbstractInstanceCache.java:134) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer.getEJBObject(StatefulSessionContainer.java:394) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor3683.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at org.jboss.invocation.Invocation.performCall(Invocation.java:386) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer$ContainerInterceptor.invokeHome(StatefulSessionContainer.java:564) [:6.1.0.Final]
+2012-10-08 05:10:00,041 ERROR [com.riavera.ejb.session.EventDispatcherBean] (Thread-16925) ::nobody::2713: unexpected exception processing callback for event 0904C523C0A81447668E37B60976341C: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.6.0_33]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at com.riavera.ejb.session.EventDispatcherBean.finishAttempt(EventDispatcherBean.java:438) [:]
+	at sun.reflect.GeneratedMethodAccessor4196.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+2012-10-08 13:10:01,157 WARN  [org.hibernate.util.JDBCExceptionReporter] (DefaultQuartzScheduler_Worker-9)  SQL Error: 1, SQLState: 23000
+2012-10-08 13:10:01,157 WARN  [org.hibernate.util.JDBCExceptionReporter] (DefaultQuartzScheduler_Worker-9)  SQL Error: 1, SQLState: 23000
+	at oracle.jdbc.driver.DatabaseError.throwBatchUpdateException(DatabaseError.java:629) [:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeBatch(OraclePreparedStatement.java:9409) [:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeBatch(OracleStatementWrapper.java:211) [:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at org.jboss.resource.adapter.jdbc.CachedPreparedStatement.executeBatch(CachedPreparedStatement.java:476) [:6.1.0.Final]
+	at org.jboss.resource.adapter.jdbc.WrappedStatement.executeBatch(WrappedStatement.java:774) [:6.1.0.Final]
+	at org.hibernate.jdbc.BatchingBatcher.doExecuteBatch(BatchingBatcher.java:70) [:3.6.6.Final]
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:268) [:3.6.6.Final]
+2012-10-08 13:10:01,167 WARN  [org.hibernate.util.JDBCExceptionReporter] (DefaultQuartzScheduler_Worker-9)  SQL Error: 1, SQLState: 23000
+2012-10-08 13:10:01,167 WARN  [org.hibernate.util.JDBCExceptionReporter] (DefaultQuartzScheduler_Worker-9)  SQL Error: 1, SQLState: 23000
+2012-10-08 14:00:00,039 ERROR [com.riavera.ejb.session.EventDispatcherBean] (Thread-16926) ::nobody::2726: unexpected exception processing callback for event 05BC3DD2C0A814470711AADCF24E35C4: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.6.0_33]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at com.riavera.ejb.session.EventDispatcherBean.finishAttempt(EventDispatcherBean.java:438) [:]
+	at sun.reflect.GeneratedMethodAccessor4196.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+2012-10-08 14:00:00,068 ERROR [com.riavera.ejb.session.EventDispatcherBean] (Thread-16926) ::nobody::2728: unexpected exception processing callback for event 05BDDE01C0A814472B73D6417B0E428B: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.6.0_33]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at com.riavera.ejb.session.EventDispatcherBean.finishAttempt(EventDispatcherBean.java:438) [:]
+	at sun.reflect.GeneratedMethodAccessor4196.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+2012-10-08 14:54:36,722 ERROR [org.jboss.ejb.plugins.LogInterceptor] (WorkerThread#3[192.168.20.71:25279])  TransactionRolledbackException in method: public abstract javax.ejb.EJBObject javax.ejb.Handle.getEJBObject() throws java.rmi.RemoteException, causedBy:: java.rmi.NoSuchObjectException: Could not activate; failed to restore state
+	at org.jboss.ejb.plugins.AbstractInstanceCache.get(AbstractInstanceCache.java:134) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer.getEJBObject(StatefulSessionContainer.java:394) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor3683.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at org.jboss.invocation.Invocation.performCall(Invocation.java:386) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer$ContainerInterceptor.invokeHome(StatefulSessionContainer.java:564) [:6.1.0.Final]
+2012-10-08 16:58:41,252 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:47338])  bad: HOME_NAME_PREFIX 
+2012-10-08 16:58:41,252 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:47338])  invalidDataMap: {HOME_NAME_PREFIX=45001, HOME_PHONE=45016}
+2012-10-08 18:47:49,781 ERROR [org.jboss.ejb.plugins.LogInterceptor] (WorkerThread#5[192.168.20.71:64027])  TransactionRolledbackException in method: public abstract javax.ejb.EJBObject javax.ejb.Handle.getEJBObject() throws java.rmi.RemoteException, causedBy:: java.rmi.NoSuchObjectException: Could not activate; failed to restore state
+	at org.jboss.ejb.plugins.AbstractInstanceCache.get(AbstractInstanceCache.java:134) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer.getEJBObject(StatefulSessionContainer.java:394) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor3683.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at org.jboss.invocation.Invocation.performCall(Invocation.java:386) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer$ContainerInterceptor.invokeHome(StatefulSessionContainer.java:564) [:6.1.0.Final]
+2012-10-08 20:35:23,704 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#0[192.168.20.71:58337]) :MobileWallet:127.0.0.1:nnapp_fi_in::::0:  unable to find cust user:abood_majeedNo such entity!
+2012-10-08 22:11:40,445 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:59008]) :miiscan-prod:127.0.0.1:nnapp_core900::::0:  service config: registration_fraud_rating_CC_US default value set - PLEASE FIX!
+2012-10-08 22:30:01,544 ERROR [org.jboss.ejb.plugins.LogInterceptor] (WorkerThread#5[192.168.20.71:15470])  TransactionRolledbackException in method: public abstract javax.ejb.EJBObject javax.ejb.Handle.getEJBObject() throws java.rmi.RemoteException, causedBy:: java.rmi.NoSuchObjectException: Could not activate; failed to restore state
+	at org.jboss.ejb.plugins.AbstractInstanceCache.get(AbstractInstanceCache.java:134) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer.getEJBObject(StatefulSessionContainer.java:394) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor3683.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at org.jboss.invocation.Invocation.performCall(Invocation.java:386) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer$ContainerInterceptor.invokeHome(StatefulSessionContainer.java:564) [:6.1.0.Final]
+2012-10-08 22:43:31,403 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#3[192.168.20.71:33160]) :MIISCAN:127.0.0.1:marciayrc::M4H1J6::0:  unable to find cust user:marciayrcNo such entity!
+2012-10-08 22:44:07,157 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#3[192.168.20.71:33160]) :MIISCAN:127.0.0.1:marciayrc::M4H1J6::0:  unable to find cust user:marciayrcNo such entity!
+2012-10-08 22:46:00,230 ERROR [org.jboss.ejb.plugins.LogInterceptor] (WorkerThread#0[192.168.20.71:33165])  TransactionRolledbackException in method: public abstract javax.ejb.EJBObject javax.ejb.Handle.getEJBObject() throws java.rmi.RemoteException, causedBy:: java.rmi.NoSuchObjectException: Could not activate; failed to restore state
+	at org.jboss.ejb.plugins.AbstractInstanceCache.get(AbstractInstanceCache.java:134) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer.getEJBObject(StatefulSessionContainer.java:394) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor3683.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at org.jboss.invocation.Invocation.performCall(Invocation.java:386) [:6.1.0.Final]
+	at org.jboss.ejb.StatefulSessionContainer$ContainerInterceptor.invokeHome(StatefulSessionContainer.java:564) [:6.1.0.Final]
+2012-10-08 22:46:00,258 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:33165])  bad: 
+2012-10-08 22:46:00,258 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:33165])  invalidDataMap: {OPERATIONAL_LOGIN=1015}
+2012-10-08 22:46:44,252 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:33165])  bad: 
+2012-10-08 22:46:44,252 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:33165])  invalidDataMap: {OPERATIONAL_LOGIN=1015}
+2012-10-08 22:48:38,990 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#5[192.168.20.71:33438]) :MIISCAN:127.0.0.1:marciayrc::M4H1J6::0:  unable to find cust user:marciayrcNo such entity!
+2012-10-08 22:48:39,038 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#5[192.168.20.71:33438]) :MIISCAN:127.0.0.1:marciayrc::M4H1J6::0:  unable to find cust user:marciayrcNo such entity!
+2012-10-08 23:08:02,705 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:9724])  bad: 
+2012-10-08 23:08:02,705 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:9724])  invalidDataMap: {HOME_PHONE=45016}
+2012-10-08 23:09:34,205 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:9724]) :miiscan-prod:127.0.0.1:nnapp_core900::::0:  unable to find country native currency!: javax.ejb.ObjectNotFoundException: No such entity!
+	at org.jboss.ejb.plugins.cmp.jdbc.JDBCFindEntityCommand.execute(JDBCFindEntityCommand.java:64) [:6.1.0.Final]
+	at org.jboss.ejb.plugins.cmp.jdbc.JDBCStoreManager.findEntity(JDBCStoreManager.java:604) [:6.1.0.Final]
+	at org.jboss.ejb.plugins.CMPPersistenceManager.findEntity(CMPPersistenceManager.java:315) [:6.1.0.Final]
+	at org.jboss.resource.connectionmanager.CachedConnectionInterceptor.findEntity(CachedConnectionInterceptor.java:234) [:6.1.0.Final]
+	at org.jboss.ejb.EntityContainer.findSingleObject(EntityContainer.java:1117) [:6.1.0.Final]
+	at org.jboss.ejb.EntityContainer.findLocal(EntityContainer.java:689) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor3498.invoke(Unknown Source) [:1.6.0_33]
+2012-10-08 23:09:34,212 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:9724]) :miiscan-prod:127.0.0.1:nnapp_core900::::0:  unknown exception:: com.navahonetworks.exceptions.NNIllegalArgumentException: Country currency not found
+	at com.navahonetworks.ejb.session.app.CoreAppUseBean.oldRegisterCust(CoreAppUseBean.java:1670) [:]
+	at com.navahonetworks.ejb.session.app.CoreAppUseBean.registerCust(CoreAppUseBean.java:216) [:]
+	at sun.reflect.GeneratedMethodAccessor5594.invoke(Unknown Source) [:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_33]
+	at org.jboss.invocation.Invocation.performCall(Invocation.java:386) [:6.1.0.Final]
+	at org.jboss.ejb.StatelessSessionContainer$ContainerInterceptor.invoke(StatelessSessionContainer.java:233) [:6.1.0.Final]
+2012-10-08 23:09:34,214 WARN  [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#0[192.168.20.71:9724])  exception in registerCust() - rolling back!
+2012-10-08 23:10:51,840 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#5[192.168.20.71:9729]) :miiscan-prod:84.46.117.83:n.roloff@hotmail.de::::0:  unable to find cust user:n.roloff@hotmail.deNo such entity!
+2012-10-08 23:11:09,350 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#5[192.168.20.71:9729]) :miiscan-prod:84.46.117.83:n.roloff@hotmail.de::::0:  unable to find cust user:n.roloff@hotmail.deNo such entity!
+2012-10-08 23:11:31,748 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#5[192.168.20.71:9729]) :miiscan-prod:84.46.117.83:n.roloff@hotmail.de::::0:  unable to find cust user:n.roloff@hotmail.deNo such entity!
+2012-10-08 23:12:06,339 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#5[192.168.20.71:9729]) :miiscan-prod:84.46.117.83:niklas::::0:  unable to find cust user:niklasNo such entity!
+2012-10-08 23:13:59,316 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#3[192.168.20.71:25829])  bad: HOME_NAME_PREFIX 
+2012-10-08 23:13:59,316 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#3[192.168.20.71:25829])  invalidDataMap: {HOME_NAME_PREFIX=45001}
+2012-10-08 23:14:29,108 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#3[192.168.20.71:25829])  bad: HOME_NAME_PREFIX 
+2012-10-08 23:14:29,108 ERROR [com.navahonetworks.ejb.session.app.CoreAppUseBean] (WorkerThread#3[192.168.20.71:25829])  invalidDataMap: {HOME_NAME_PREFIX=45001}
+2012-10-08 23:17:02,839 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#0[192.168.20.71:33256]) :MIISCAN:127.0.0.1:niklas roloff::M4H1J6::0:  unable to find cust user:niklas roloffNo such entity!
+2012-10-08 23:17:31,416 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#0[192.168.20.71:33256]) :MIISCAN:127.0.0.1:n.roloff@hotmail.de::M4H1J6::0:  unable to find cust user:n.roloff@hotmail.deNo such entity!
+2012-10-08 23:17:33,797 ERROR [com.navahonetworks.ejb.session.app.LoginUserLogicBean] (WorkerThread#0[192.168.20.71:33256]) :MIISCAN:127.0.0.1:n.roloff@hotmail.de::M4H1J6::0:  unable to find cust user:n.roloff@hotmail.deNo such entity!
