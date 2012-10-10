@@ -1,9 +1,0 @@
-2012-10-08T04:46:03-04:00 ERR (index.index): [199.21.99.86:#0450ugqqu5of0064tnqjee1kd5::2985952] no country matches ip: 199.21.99.86 
-2012-10-08T07:39:45-04:00 ERR (index.index): [46.217.69.156:#5tnqgbojhrvcqg1sb48fdats64::1739576] no country matches ip: 46.217.69.156 
-2012-10-08T07:39:46-04:00 ERR (merchant-static.index): [46.217.69.156:#q97ur4hsab4q5m0tgath5oe4f1::7555640] no country matches ip: 46.217.69.156 
-2012-10-08T16:36:10-04:00 ERR (register-personal.index): [176.19.13.241:#hv6m626v93t7agh89m7r4l70i2::4650998] no country matches ip: 176.19.13.241 
-2012-10-08T19:09:34-04:00 ERR (register-personal.review): [84.46.117.83:#3fae5oi2v0ofdh9ddfk9fakld4::7544113] exception registering new cust: 40001, Country currency not foundexception 'PHPWBException' with message 'Country currency not found' in /var/www/miiscan.com/app/miiscan/library/Wallet/Util.php:24
-2012-10-08T19:10:51-04:00 ERR (user.login): [84.46.117.83:#3fae5oi2v0ofdh9ddfk9fakld4::5202536] exception=1006=unable to find cust user:n.roloff@hotmail.de 
-2012-10-08T19:11:09-04:00 ERR (user.login): [84.46.117.83:#3fae5oi2v0ofdh9ddfk9fakld4::8568794] exception=1006=unable to find cust user:n.roloff@hotmail.de 
-2012-10-08T19:11:31-04:00 ERR (user.login): [84.46.117.83:#3fae5oi2v0ofdh9ddfk9fakld4::8562347] exception=1006=unable to find cust user:n.roloff@hotmail.de 
-2012-10-08T19:12:06-04:00 ERR (user.login): [84.46.117.83:#3fae5oi2v0ofdh9ddfk9fakld4::1206497] exception=1006=unable to find cust user:niklas 
