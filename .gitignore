@@ -5,3 +5,4 @@ logs/filtered/*
 include
 tests
 *.pyc
+README.txt
